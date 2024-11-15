@@ -1,0 +1,46 @@
+.container {
+  margin: 20px auto;
+  border: 2px solid gray;
+  width: 370px;
+}
+
+#imageview {
+  height: 395px;
+  position: relative;
+}
+
+#imageview img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#cropper {
+  width: 20%;
+  height: 20%;
+  outline: 2px dotted red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#cropview {
+  position: relative;
+  overflow: hidden;
+  height: 395px;
+}
+
+#cropview img {
+  position: absolute;
+  height: 500%;
+  width: 500%;
+  display: block;
+  margin: auto;
+}
+
+img {
+  /* Prevent dragging the image */
+  pointer-events: none;
+  user-select: none;
+}
